@@ -1,0 +1,28 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Add New Device</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeNew()">
+                <i class="icon ion-close"></i>
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Name</span>
+                    <input type="text" ng-model="device.name">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Number</span>
+                    <input type="text" ng-model="device.number">
+                </label>
+
+                <label class="item">
+                    <button class="button right icon-left ion-plus button-positive" type="submit" ng-click="addDevice(device)">Add</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
